@@ -16,7 +16,7 @@ app.use(function (req, res, next) {
 var lessonsRouter = require("./routes/lessons");
 app.use("/lessons", lessonsRouter);
 
-var ordersRouter = require("./routes/orders");
+var ordersRouter = require("./routes/order");
 app.use("/orders", ordersRouter);
 
-app.listen(8080);
+app.listen(3000);

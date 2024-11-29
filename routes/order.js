@@ -9,7 +9,7 @@ orders.post("/", function (req, res) {
   db.collection("orders").insertOne(order);
   order.lessons.forEach((lesson) => {
     var amount = lesson.amount;
-    var id = new ObjectId(lesson.lesson._id);
+    var id = new createFromTime(lesson.lesson._id);
     db.collection("lessons").updateOne(
       { _id: id },
       { $inc: { spaces: -amount } }
