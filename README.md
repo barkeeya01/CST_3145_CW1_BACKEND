@@ -5,7 +5,10 @@ REPO GITHUB LINK: https://github.com/barkeeya01/CST_3145_CW1_BACKEND
 
 
 
-CW BACKEND LINK: 
+CW BACKEND LINK(DEPLOYMENT): https://cst-3145-cw1-backend.onrender.com
+
+
+
 
 **How to run:**
 
