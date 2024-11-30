@@ -19,4 +19,12 @@ app.use("/lessons", lessonsRouter);
 var ordersRouter = require("./routes/order");
 app.use("/orders", ordersRouter);
 
+const staticFilesRouter = require("./routes/staticFiles");
+app.use("/", staticFilesRouter); // Static file route
+
+// Fallback route for unmatched endpoints
+app.use((req, res) => {
+  res.status(404).json({ error: "Route not found" });
+});
+
 app.listen(3000);
