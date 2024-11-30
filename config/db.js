@@ -3,7 +3,7 @@ const { MongoClient } = require("mongodb");
 var db;
 
 try {
-  const client = new MongoClient(process.env.DB_URL);
+  const client = new MongoClient(process.env.DB_URL, {tls:true});
   db = client.db("Afterschooldb");
   console.log("Connected to database.");
 } catch {
